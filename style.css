@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+#wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: deeppink;
+    text-align: center;
+    height: 100px; 
+}
+
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.getBtn{
+    color: white;
+    font-size: 5rem;
+    position: relative;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.buttons div {
+
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(127, 16, 51, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+
+.buttons div:hover {
+    background-color: #ccc;
+}
+
+.buttons div:active {
+    background-color: #bbb;
+}
+
+.gudu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gulu {
+    position: relative;
+    animation: mymove 5s infinite linear;
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100vw;
+    background-size: contain;
+    /* background-position: left; */
+}
+
+.img{
+    width: 380px;
+    height: 450px;
+    background: url('running.gif') no-repeat;
+}
+
+@keyframes mymove {
+    from {
+        transform: translateX(-100%);
+
+    }
+
+    to {
+        transform: translateX(100%);
+
+    }
+}
+
+/* body {
+    animation: backgroundColorChange 25s infinite alternate;
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-color: chocolate;
+    }
+    50% {
+        background-color: greenyellow;
+    }
+    100% {
+        background-color: rgb(130, 128, 240);
+    }
+} */
+
+#first {
+    color: greenyellow;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#second {
+    color: orange;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#third {
+    color: greenyellow;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+#colors1 {
+    color: white;
+    background-color: greenyellow;
+}
+
+#colors2 {
+    color: white;
+    background-color: red;
+}
+
+#colors3 {
+    color: white;
+    background-color: blue;
+}
+
+#colors4 {
+    color: white;
+    background-color: orange;
+}
+
+#last {
+    color: white;
+    background-color: rgb(168, 28, 129);
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    background-color: black;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.licky {
+    white-space: nowrap;
+
+    display: inline-block;
+
+    animation: mymove 35s linear infinite;
+
+    color: white;
+
+    font-size: larger;
+
+    font-weight: 600;
+
+}
+
+/* @keyframes mymove {
+    from {
+        transform: translateX(100%);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+
+    }
+} */
